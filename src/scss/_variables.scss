@@ -1,0 +1,30 @@
+// Typography
+$font-family: 'Retina', 'Roboto', 'Open Sans';
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// Color Scheme
+$primary-color:#252D48;
+$secondary-color: #4B6FEE;
+$tertiary-color: #3C4562;
+
+// Environment Specific Colors
+$body-bg-color: $primary-color;
+$header-color: $secondary-color;
+$box-color: $tertiary-color;
+$text-light-color: $white;
+$text-dark-color: $black;

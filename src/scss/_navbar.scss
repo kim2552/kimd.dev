@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    font-family: $font-family;
+    font-size: $font-size-base;
+
+    a{
+        text-decoration: none;
+    }
+
+    .menu-item{
+        padding:1rem;
+        color: $text-dark-color;
+    }
+
+    .menu-item:hover{
+        background-color: $tertiary-color;
+        color: $text-light-color;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}

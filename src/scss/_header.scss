@@ -1,0 +1,10 @@
+.header{
+    background-color: $header-color;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        height: 10rem;
+    }
+}
