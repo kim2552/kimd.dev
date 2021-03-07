@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Header = () => {
     return(
-        <div className="header">
+        <div className="header-container">
             <a href="/">
                 <img src={logo} alt="kimd.dev logo"></img>
             </a>
