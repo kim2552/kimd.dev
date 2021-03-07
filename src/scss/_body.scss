@@ -1,4 +1,23 @@
-body{
+html, body{
     margin: 0;
-    background-color: $tertiary-color;
+    background-color: $body-bg-color;
+
+    font-size: $font-size-lg;
+
+    @media only screen and (max-width: 1280px) {
+        font-size: $font-size-md;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: $font-size-sm;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: $font-family;
+    color: $text-light-color;
+}
+
+li{
+    list-style: none;
 }

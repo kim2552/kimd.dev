@@ -1,10 +1,65 @@
-.header{
-    background-color: $header-color;
-    padding: 2rem;
+@keyframes load_header{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.header-container{
     display: flex;
     justify-content: space-between;
+    background-color: $header-color;
+    
+    padding-left: $header-padding-lg;
+    padding-right: $header-padding-lg;
+
+    animation: load_header $loading-time;
 
     img{
-        height: 10rem;
+        height: $logo-size-lg;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        img{
+            height: $logo-size-md;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        img{
+            height: $logo-size-sm;
+        }
+    }
+}
+
+.navbar-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: $header-padding-lg;
+    padding-right: $header-padding-lg;
+
+    font-family: $font-family;
+
+    a{
+        text-decoration: none;
+    }
+
+    .menu-item{
+        padding: $button-margin-lg;
+        color: $text-dark-color;
+    }
+
+    .menu-item:hover{
+        background-color: $tertiary-color;
+        color: $text-light-color;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
     }
 }
