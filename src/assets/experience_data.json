@@ -1,0 +1,33 @@
+{
+    "experiences":[
+        {
+            "id": 1,
+            "title": "General Motors",
+            "position": "Software Engineer",
+            "date": "July 2020 - Present",
+            "text_list": ["Currently working in Active Safety in order to improve testing and simulation of controllers.",
+                        "Developed an internal tool for automating test configurations using Python.",
+                        "Developed high fidelity simulation models for hardware-in-the-loop vehicle testing."],
+            "website_link": "https://gm.com"
+        },
+        {
+            "id": 2,
+            "title": "Magna International",
+            "position": "Software Engineer Intern",
+            "date": "May 2018 - August 2019",
+            "text_list": ["Refactored a real-time application to be compatible with a hard RTOS, allowing the software to be executable on an embedded platform.",
+                        "Optimized execution time of a real-time application by splitting computation onto two separate cores, reducing runtime from 80ms to 30ms.",
+                        "Developed an internal application using C++ and openCV to read and analyze sensor information."],
+            "website_link": "https://www.magna.com/"
+        },
+        {
+            "id": 3,
+            "title": "S2E Technologies",
+            "position": "Robotics Developer Co-op",
+            "date": "May 2017 - August 2017",
+            "text_list": ["Spearheaded a project to design an autonomous delivery robot used within communities by building a prototype presented to stakeholders.",
+                        "Utilized SLAM, obstacle detection, and path finding algorithms using ROS libraries and a LiDAR sensor to implement autonomous navigation."],
+            "website_link": "https://s2etech.com/"
+        }
+    ]
+}
