@@ -37,14 +37,14 @@
     @media only screen and (max-width: 1280px) {
         margin: $description-margin-md;
 
-        .scrollbar-wrapper{
+        .information-wrapper.scrollbar-wrapper{
             padding: $description-padding-md;
         }
     }
     @media only screen and (max-width: 768px) {
         margin: $description-margin-sm;
 
-        .scrollbar-wrapper{
+        .information-wrapper.scrollbar-wrapper{
             padding: $description-padding-sm;
         }
     }
