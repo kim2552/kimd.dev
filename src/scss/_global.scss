@@ -48,6 +48,6 @@ li{
     min-height: 100vh;
 }
 
-.about-container, .projects-container, .contact-container{
+.home-container, .about-container, .projects-container, .contact-container{
     animation: load_animation $loading-time;
 }
