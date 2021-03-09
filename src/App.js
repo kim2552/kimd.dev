@@ -7,13 +7,11 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import projects_data from './assets/projects_data.json';
-import experience_data from './assets/experience_data.json';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   const projects = projects_data.projects;
-  const experiences = experience_data.experiences;
 
   return (
     <div className="container">
