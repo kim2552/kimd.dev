@@ -11,15 +11,29 @@
     }
 
     .description-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+
         background-color: $box-color;
+        color: $text-light-color;
+        text-align: left;
+
         border-radius: 1rem;
-        box-shadow: 1rem 1rem;
+        box-shadow: 1rem 1rem $black;
 
         margin: $description-margin-lg;
         padding: $description-padding-lg;
-        
-        align-content: center;
-        text-align: left;
+
+        a{
+            margin-right: 1rem;
+            font-size: 2rem;
+            color: darken($white,25%);
+        }
+        a:hover{
+            color:$white;
+        }
     }
 
     @media only screen and (max-width: 1280px) {
