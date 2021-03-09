@@ -1,0 +1,51 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: $description-margin-lg;
+    margin-left: 25rem;
+    margin-right: 25rem;
+
+    @keyframes shadow_load{
+        from{
+            box-shadow: unset;
+        }
+        to{
+            box-shadow: 1rem 1rem $black;
+        }
+    }
+
+    .projects-wrapper{
+        background-color: $box-color;
+        color: $text-light-color;
+
+        border-radius: 1rem;
+
+        margin: $description-margin-lg;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        padding: $description-padding-lg;
+
+        a{
+            color: darken($white, 25%);
+            font-size: 2rem;
+        }
+        a:hover{
+            color:$white;
+        }
+    }
+
+    .projects-wrapper:hover{
+        box-shadow: 1rem 1rem $black;
+        animation: shadow_load 0.5s ease;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        margin: $description-margin-md;
+    }
+    @media only screen and (max-width: 768px) {
+        margin: $description-margin-sm;
+    }
+}

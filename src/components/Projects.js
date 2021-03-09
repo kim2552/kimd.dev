@@ -1,22 +1,16 @@
 import Project from './Project'
 import { useState } from 'react'
+import Footer from './Footer'
 
 const Projects = (props) => {
-    const [selectedProject, setSelectedProject] = useState(1);
-    
     return (
-        <div className="information-container">
-            <div className="scrollbar-wrapper">
-                <nav>
-                    {props.projects.map((project) => (
-                        <li key={project.id} onClick={() => setSelectedProject(project.id)}>{project.title}</li>
-                    ))}
-                </nav>
-            </div>
-            <div className="information-wrapper">
-                {props.projects.map((project) => ( project.id === selectedProject ?
-                    <Project project={project} key={project.id}></Project> : ''
-                ))}
+        <div className="container">
+            <div className="projects-container">
+                {props.projects.map((project) => 
+                    <div className="projects-wrapper">
+                        <Project project={project} key={project.id}></Project>
+                    </div>
+                )}
             </div>
         </div>
     )
