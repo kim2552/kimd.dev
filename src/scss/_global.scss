@@ -1,0 +1,53 @@
+html, body{
+    margin: 0;
+    background-color: $body-bg-color;
+
+    font-size: $font-size-lg;
+
+    @media only screen and (max-width: 1280px) {
+        font-size: $font-size-md;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: $font-size-sm;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: $font-family;
+}
+
+li{
+    list-style: none;
+}
+
+/* Footer */
+.footer-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    background-color: $secondary-color;
+    h1{
+        color: $text-dark-color;
+    }
+}
+
+/* Load Animation */
+@keyframes load_animation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.container{
+    min-height: 100vh;
+}
+
+.about-container, .projects-container, .contact-container{
+    animation: load_animation $loading-time;
+}
