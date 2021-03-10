@@ -60,9 +60,6 @@ const ContactForm = () => {
                         err: 'failed to send'
                     });
                     alert('Failed to send')
-                    setTimeout(() => {
-                        resetForm()
-                    }, 6000);
                 }else{
                     setData({
                         ...data,
@@ -70,9 +67,6 @@ const ContactForm = () => {
                         err: 'success'
                     });
                     alert('Message Sent!')
-                    setTimeout(() => {
-                        resetForm()
-                    }, 6000);
                 }
             }).catch( (error) => {
                 setData({
