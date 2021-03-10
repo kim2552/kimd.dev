@@ -1,0 +1,71 @@
+.contact-container{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+
+    .title-wrapper{
+        text-align: center;
+    }
+
+    .description-wrapper{
+        background-color: $box-color;
+        color: $text-light-color;
+        text-align: left;
+
+        border-radius: 1rem;
+        box-shadow: 1rem 1rem $black;
+
+        margin: $description-margin-lg;
+        padding: $description-padding-lg;
+    }
+
+    .contact-form{
+        background-color: $box-color;
+        
+        border-radius: 1rem;
+        box-shadow: 1rem 1rem $black;
+
+        margin: $description-margin-lg;
+        margin-top:1rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+
+        padding: $description-padding-lg;
+
+        .form-field{
+            background-color: $white;
+        }
+
+        .form-submit{
+            margin: $button-margin-lg;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .contact-form, .description-wrapper{
+            margin: $description-margin-md;
+            padding: $description-padding-md;
+
+            .form-submit{
+                margin: $button-margin-md;
+                margin-left: 0;
+            }
+        }
+        .contact-form{
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .contact-form, .description-wrapper{
+            margin: $description-margin-sm;
+            padding: $description-padding-sm;
+
+            .form-submit{
+                margin: $button-margin-sm;
+                margin-left: 0;
+            }
+        }
+    }
+}
