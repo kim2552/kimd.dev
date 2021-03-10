@@ -10,12 +10,12 @@ const Project = (props) => {
             <p>{p.text}</p>
             {(() =>{
                 if(p.website_link){
-                    return <a href={p.website_link}><CgWebsite></CgWebsite></a>
+                    return <a href={p.website_link} rel="noreferrer" target="_blank"><CgWebsite></CgWebsite></a>
                 }
             })()}
             {(() =>{
                 if(p.github_link){
-                    return <a href={p.github_link}><FaGithubSquare></FaGithubSquare></a>
+                    return <a href={p.github_link} rel="noreferrer" target="_blank"><FaGithubSquare></FaGithubSquare></a>
                 }
             })()}
         </>
