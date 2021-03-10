@@ -60,13 +60,15 @@ const ContactForm = () => {
                         err: 'failed to send'
                     });
                     alert('Failed to send')
+                    resetForm();
                 }else{
                     setData({
                         ...data,
                         sent: true,
                         err: 'success'
                     });
-                    alert('Message Sent!')
+                    alert('Message Sent!');
+                    resetForm();
                 }
             }).catch( (error) => {
                 setData({
