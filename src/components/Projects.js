@@ -1,6 +1,11 @@
 import Project from './Project'
+import {useEffect} from 'react';
 
 const Projects = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return (
         <div className="container">
             <div className="projects-container">

@@ -1,6 +1,11 @@
 import ContactForm from './ContactForm'
+import {useEffect} from 'react';
 
 const Work = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="container">
             <div className="contact-container">

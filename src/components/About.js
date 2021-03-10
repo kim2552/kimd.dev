@@ -2,8 +2,13 @@ import profile_img from '../assets/profile_img.jpg'
 import {FaGithubSquare, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {SiCplusplus, SiPython, SiJavascript,SiPhp, SiLaravel, SiReact, SiHtml5, SiCss3, SiMysql} from 'react-icons/si'
+import {useEffect} from 'react';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="container">
             <div className="about-container">
