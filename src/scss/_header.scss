@@ -12,12 +12,16 @@
     }
 
     @media only screen and (max-width: 1280px) {
+        padding-left: $header-padding-md;
+        padding-right: $header-padding-md;
         img{
             height: $logo-size-md;
         }
     }
 
     @media only screen and (max-width: 768px) {
+        padding-left: $header-padding-sm;
+        padding-right: $header-padding-sm;
         img{
             height: $logo-size-sm;
         }
@@ -28,9 +32,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    padding-left: $header-padding-lg;
-    padding-right: $header-padding-lg;
 
     font-family: $font-family;
 
@@ -49,7 +50,17 @@
         color: $text-light-color;
     }
 
+    @media screen and (max-width: 1280px) {
+        .menu-item{
+            padding: $button-margin-md;
+        }
+    }
+
     @media only screen and (max-width: 768px) { //TODO:Create responsive navbar
         flex-direction: column;
+
+        .menu-item{
+            padding: $button-margin-sm;
+        }
     }
 }
