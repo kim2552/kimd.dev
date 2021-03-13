@@ -19,17 +19,26 @@ function App() {
         <Header></Header>
         <div className="content-container">
             <Switch>
-              <Route path="/about">
+              <Route exact path="/about">
                 <About></About>
               </Route>
-              <Route path="/projects">
+              <Route exact path="/projects">
                 <Projects projects={projects}></Projects>
               </Route>
-              <Route path="/contact">
+              <Route exact path="/contact">
                 <Contact></Contact>
               </Route>
-              <Route path="/">
+              <Route exact path="/">
                 <Home></Home>
+              </Route>
+              <Route path="/">
+                <div className="description-container">
+                  <div style={{textAlign: "center"},{margin: "auto"}}>
+                    <p>
+                      Page does not exist.
+                    </p>
+                  </div>
+                </div>
               </Route>
             </Switch>
           <Footer></Footer>
