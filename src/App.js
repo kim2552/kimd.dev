@@ -33,7 +33,7 @@ function App() {
               </Route>
               <Route path="/">
                 <div className="description-container">
-                  <div style={{textAlign: "center"},{margin: "auto"}}>
+                  <div style={{textAlign: "center", margin: "auto"}}>
                     <p>
                       Page does not exist.
                     </p>
