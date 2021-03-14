@@ -4,7 +4,8 @@
             "id": 1,
             "title": "OnlyData",
             "text": "A data visualization website that delivers minimalistic visuals to people. It helps users receive quick and easy to understand information in the form of graphs and charts. OnlyData updates people on relevant and important facts, trends and numbers.",
-            "website_link": "https://onlydata.ca"
+            "website_link": "https://onlydata.ca",
+            "github_link": "https://github.com/kim2552/onlydata"
         },
         {
             "id": 2,
