@@ -50,17 +50,46 @@
         color: $text-light-color;
     }
 
+    .icon-bars{
+        display: none;
+    }
+
     @media screen and (max-width: 1280px) {
         .menu-item{
             padding: $button-margin-md;
         }
     }
+}
 
-    @media only screen and (max-width: 768px) { //TODO:Create responsive navbar
-        flex-direction: column;
+@media only screen and (max-width: 768px) {
+    .navbar-wrapper{
+        .menu-item{
+            display:none;
+        }
+
+        .icon-bars{
+            display: block;
+            margin: $button-margin-sm;
+        }
+
+        .icon-bars:hover{
+            cursor: pointer;
+        }
+    }
+
+    .navbar-wrapper.responsive{
+        display: block;
+
+        .icon-bars{
+            padding-top: 1.5rem;
+            text-align: right;
+        }
 
         .menu-item{
+            display: block;
+            text-align: right;
             padding: $button-margin-sm;
+            animation: load_animation $loading-time;
         }
     }
 }
