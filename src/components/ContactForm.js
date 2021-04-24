@@ -83,7 +83,7 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form">
-            <FormControl fullWidth={true}>
+            <FormControl fullWidth={true} className="form-field">
                 <TextField required label="Full Name" variant="filled" id="full-name" name="name" value={data.name} className="form-field" onChange={handleChange} error={valid.name ? false : true} helperText={valid.name ? "":"This field is required."}/>
             </FormControl>
             <FormControl fullWidth={true}>
@@ -94,7 +94,7 @@ const ContactForm = () => {
             </FormControl>
             <FormControl>
                 <div className="form-submit">
-                    <Button variant="contained" color="primary" onClick={formSubmit}>{data.buttonText}</Button>
+                    <Button className="buttom-custom" variant="contained" color="primary" onClick={formSubmit}>{data.buttonText}</Button>
                 </div>
             </FormControl>
         </div>
