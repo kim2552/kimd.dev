@@ -3,7 +3,9 @@
     font-family: "CustomFont";
     src: url(../assets/FredokaOne-Regular.ttf);
     }
-$font-family: 'Roboto','sans-serif';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-family: 'Roboto', sans-serif;
 $font-size-lg: 32px;
 $font-size-md: 16px;
 $font-size-sm: 12px;
@@ -29,9 +31,10 @@ $cyan: #6cb2eb;
 
 
 // Color Scheme
-$primary-color: #bee3db;//#252D48;
-$secondary-color: #faf9f9;
-$tertiary-color: #ffd6ba;//#3C4562;
+$primary-color: #bee3db;//#084B83;//#252D48;
+$secondary-color: #faf9f9;//#FFC2E2;
+$tertiary-color: #ffb482;//#FFC2E2;//#3C4562;
+$quad-color: $black;
 
 
 // Environment Specific Colors

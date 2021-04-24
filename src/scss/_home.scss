@@ -1,11 +1,17 @@
 .home-container{
     height: 100vh;
-    background-image: linear-gradient($secondary-color, $primary-color);//url(../assets/toronto.jpg);
+    background-image: linear-gradient(0deg, $primary-color, 70%, $secondary-color);//linear-gradient($secondary-color, $primary-color);//url(../assets/toronto.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .description-wrapper{
         text-align: center;
         padding: $description-padding-lg;
+        padding-bottom: 20rem;
 
         color: $text-dark-color;
         h1{
@@ -21,6 +27,10 @@
     .links-wrapper{
         display: table;
         padding: $description-padding-lg;
+        display: inline-grid;
+        grid-template-columns: 33% 33% 33%;
+        padding-left: 5rem;
+        padding-right: 5rem;
 
         a{
             text-decoration: none;
@@ -28,10 +38,15 @@
         .menu-item{
             margin: 1rem;
             padding: 1rem;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
 
             font-size: 20px;
             font-family: $font-family;
             color: $text-dark-color;
+            text-align: center;
 
             background-color: $tertiary-color;
             border-radius: 1rem;
@@ -45,6 +60,7 @@
     @media screen and (max-width: 1280px) {
         .description-wrapper, .links-wrapper{
             padding: $description-padding-md;
+            padding-bottom: 10rem;
 
             h1{
                 font-size: 4rem;
@@ -60,6 +76,14 @@
     @media screen and (max-width: 768px) {
         .description-wrapper, .links-wrapper{
             padding: $description-padding-sm;
+            padding-bottom: 10rem;
+
+            display: flex;
+            flex-direction: column;
+
+            .menu-item{
+                height: auto;
+            }
 
             h1{
                 font-size: 4rem;
