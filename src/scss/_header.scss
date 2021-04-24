@@ -40,14 +40,15 @@
     }
 
     .menu-item{
-        padding: $button-margin-lg;
+        margin-left: 1rem;
+        padding: 1rem;
         color: $text-dark-color;
     }
 
     .menu-item:hover{
         background-color: $tertiary-color;
         border-radius: 1rem;
-        color: $text-light-color;
+        color: $text-dark-color;
     }
 
     .icon-bars{
@@ -56,7 +57,7 @@
 
     @media screen and (max-width: 1280px) {
         .menu-item{
-            padding: $button-margin-md;
+            padding: 1rem;
         }
     }
 }
@@ -88,7 +89,7 @@
         .menu-item{
             display: block;
             text-align: right;
-            padding: $button-margin-sm;
+            padding: 1rem;
             animation: load_animation $loading-time;
         }
     }

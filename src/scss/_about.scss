@@ -17,7 +17,7 @@
         align-content: center;
 
         background-color: $box-color;
-        color: $text-light-color;
+        color: $text-dark-color;
         text-align: left;
 
         border-radius: 1rem;
@@ -29,7 +29,7 @@
         a{
             margin-right: 1rem;
             font-size: 2rem;
-            color: darken($white,25%);
+            color: lighten($black,25%);
         }
         a:hover{
             color:$white;
@@ -83,7 +83,7 @@
         text-align: center;
 
         background-color: $box-color;
-        color: $text-light-color;
+        color: $text-dark-color;
 
         border-radius: 1rem;
         box-shadow: 1rem 1rem $black;
@@ -99,7 +99,7 @@
         justify-content: space-between;
 
         background-color: $box-color;
-        color: $text-light-color;
+        color: $text-dark-color;
 
         border-radius: 1rem;
         box-shadow: 1rem 1rem $black;

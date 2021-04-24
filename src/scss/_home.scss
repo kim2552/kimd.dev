@@ -1,6 +1,6 @@
 .home-container{
     height: 100vh;
-    background-image: url(../assets/blue_toronto.jpeg);
+    background-image: url(../assets/toronto.jpg);
     background-position: center;
 
     .description-wrapper{
@@ -22,12 +22,12 @@
             font-family: $font-family;
             color: $text-dark-color;
 
-            background-color: rgba($tertiary-color, 0.5);
+            background-color: $tertiary-color;
             border-radius: 1rem;
         }
         .menu-item:hover{
-            background-color: $tertiary-color;
-            color: $text-light-color;
+            background-color: lighten($tertiary-color,5%);
+            color: $text-dark-color;
         }
     }
 

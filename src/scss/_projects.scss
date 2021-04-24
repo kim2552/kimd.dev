@@ -16,7 +16,7 @@
 
     .projects-wrapper{
         background-color: $box-color;
-        color: $text-light-color;
+        color: $text-dark-color;
 
         border-radius: 1rem;
 
@@ -27,7 +27,7 @@
         padding: $description-padding-lg;
 
         a{
-            color: darken($white, 25%);
+            color: lighten($black, 25%);
             font-size: 2rem;
             margin-right: 1rem;
         }
