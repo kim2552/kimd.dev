@@ -2,28 +2,34 @@
     display: flex;
     justify-content: space-between;
     
+    padding: 1rem;
     padding-left: $header-padding-lg;
     padding-right: $header-padding-lg;
 
     background-color: $header-color;
 
+    a{
+        display: flex;
+        align-items: center;
+    }
     img{
-        height: $logo-size-lg;
+        height: 3rem;
     }
 
     @media only screen and (max-width: 1280px) {
         padding-left: $header-padding-md;
         padding-right: $header-padding-md;
         img{
-            height: $logo-size-md;
+            height: 2rem;
         }
     }
 
     @media only screen and (max-width: 768px) {
         padding-left: $header-padding-sm;
         padding-right: $header-padding-sm;
-        img{
-            height: $logo-size-sm;
+        a{
+            display: flex;
+            align-items: flex-start;
         }
     }
 }
