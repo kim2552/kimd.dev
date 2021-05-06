@@ -28,7 +28,6 @@
         box-shadow: 1rem 1rem $quad-color;
 
         margin: $description-margin-lg;
-        margin-top:1rem;
         margin-left: 20rem;
         margin-right: 20rem;
 
@@ -75,6 +74,7 @@
             }
         }
         .contact-form{
+            margin-top: 1rem;
             margin-left: 10rem;
             margin-right: 10rem;
         }

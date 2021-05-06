@@ -6,10 +6,8 @@ const Navbar = () => {
     function changeMenu(){
         var x = document.getElementById("navbarWrapper");
         if(x.className === "navbar-wrapper"){
-            console.log("responsive");
             x.className += " responsive";
         }else{
-            console.log("original");
             x.className = "navbar-wrapper";
         }
     }
