@@ -11,7 +11,7 @@ const Home = () => {
             <div className="home-container">
                 <div className="description-wrapper">
                     <h1>Hi, my name is David</h1>
-                    <h3>Full-stack Software Developer</h3>
+                    <h3>Software Developer</h3>
                     <h3>Mechatronics B. Eng</h3>
                 </div>
                 <div className="links-wrapper">
