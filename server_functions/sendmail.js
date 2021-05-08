@@ -7,8 +7,8 @@ exports.handler = function(event, context, callback) {
         host:"smtp.zoho.com",
         port:465,
         auth:{
-         user:"kimddev@zohomail.com",
-         pass:"pv213@7n#ehRZvaU#gs"
+         user:process.env.KIMDDEV_EMAIL,
+         pass:process.env.KIMDDEV_EMAIL_PASS
     }
     });
 
