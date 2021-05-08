@@ -17,7 +17,7 @@ const About = () => {
                         <div className="description-block">
                         <p>Hi, I'm David!</p>
                         <p>
-                        I'm a Full-Stack Software Developer and Mechatronics Engineer. Currently based in Toronto, ON. I love to code and work on interesting software development projects in my free time. I have a diverse set of experiences and technical skillsets that range from robotics, low-level software to full-stack web and app development.
+                        I'm a Software Developer and Mechatronics Engineer. Currently based in Toronto, ON. I love to code and work on interesting software development projects in my free time. I have a diverse set of experiences and technical skillsets that range from robotics, low-level software to full-stack web and app development.
                         </p>
                         </div>
                         <div className="links-block">
