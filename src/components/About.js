@@ -21,8 +21,8 @@ const About = () => {
                         </p>
                         </div>
                         <div className="links-block">
-                            <a href={'https://github.com/kim2552'} rel="noreferrer" target="_blank"><FaGithubSquare></FaGithubSquare></a>
-                            <a href={'https://www.linkedin.com/in/kim5/'} rel="noreferrer" target="_blank"><FaLinkedin></FaLinkedin></a>
+                            <a href={'https://github.com/kim2552'} rel="noreferrer"><FaGithubSquare></FaGithubSquare></a>
+                            <a href={'https://www.linkedin.com/in/kim5/'} rel="noreferrer"><FaLinkedin></FaLinkedin></a>
                             <a href={"mailto:davidkim2552@gmail.com"}><HiOutlineMail>Get In Touch</HiOutlineMail></a>
                         </div>
                     </div>
