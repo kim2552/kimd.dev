@@ -4,6 +4,51 @@ import axios from 'axios'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import FormControl from '@material-ui/core/FormControl'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    overrides: {
+      // Style sheet name ⚛️
+      MuiInputBase: {
+        // Name of the rule
+        root: {
+            color: 'red',
+        },
+        input: {
+          // Some CSS
+          background: '#faf9f9',
+          color: 'black',
+        },
+      },
+
+      MuiFormLabel: {
+        root: {
+            '&.Mui-focused': {
+                color: 'black'
+            },
+            color: 'black',
+        }
+      },
+
+      MuiFilledInput: {
+        root: {
+            '&:hover': {
+                backgroundColor: '#faf9f9',
+            },
+            '&.Mui-focused': {
+                backgroundColor: '#faf9f9',
+            },
+            backgroundColor: '#faf9f9',
+        },
+        underline: {
+            '&:after': {
+                borderBottomColor: 'black',
+            }
+        }
+      },
+
+    },
+  });
 
 const ContactForm = () => {
     const [data, setData] = useState({name: '', email: '', message: '', sent: false, buttonText: 'Submit', err: ''});
@@ -83,20 +128,22 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form">
-            <FormControl fullWidth={true} className="form-field">
-                <TextField required label="Full Name" variant="filled" id="full-name" name="name" value={data.name} className="form-field" onChange={handleChange} error={valid.name ? false : true} helperText={valid.name ? "":"This field is required."}/>
-            </FormControl>
-            <FormControl fullWidth={true}>
-                <TextField required label="Email" id="email" name="email" variant="filled" value={data.email} className="form-field" onChange={handleChange} error={valid.email ? false : true} helperText={valid.email ? "":"Please enter a valid email."}/>
-            </FormControl>
-            <FormControl fullWidth={true}>
-                <TextField required label="Message" variant="filled" name="message" multiline={true} rows="10" value={data.message} className="form-field" onChange={handleChange} error={valid.message ? false : true} helperText={valid.message ? "":"More characters are required."}/>
-            </FormControl>
-            <FormControl>
-                <div className="form-submit">
-                    <Button className="buttom-custom" variant="contained" color="primary" onClick={formSubmit}>{data.buttonText}</Button>
-                </div>
-            </FormControl>
+            <ThemeProvider theme={theme}>
+                <FormControl fullWidth={true} className="form-field">
+                    <TextField required label="Full Name" variant="filled" id="full-name" name="name" value={data.name} className="form-field" onChange={handleChange} error={valid.name ? false : true} helperText={valid.name ? "":"This field is required."}/>
+                </FormControl>
+                <FormControl fullWidth={true}>
+                    <TextField required label="Email" id="email" name="email" variant="filled" value={data.email} className="form-field" onChange={handleChange} error={valid.email ? false : true} helperText={valid.email ? "":"Please enter a valid email."}/>
+                </FormControl>
+                <FormControl fullWidth={true}>
+                    <TextField required label="Message" variant="filled" name="message" multiline={true} rows="10" value={data.message} className="form-field" onChange={handleChange} error={valid.message ? false : true} helperText={valid.message ? "":"More characters are required."}/>
+                </FormControl>
+                <FormControl>
+                    <div className="form-submit">
+                        <Button className="buttom-custom" variant="contained" color="primary" onClick={formSubmit}>{data.buttonText}</Button>
+                    </div>
+                </FormControl>
+            </ThemeProvider>
         </div>
     )
 }
