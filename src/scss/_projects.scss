@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    margin: $container-margin-lg;
+    
+    margin-top: $description-margin-lg;
 
     @keyframes shadow_load{
         from{
@@ -21,8 +21,6 @@
         border-radius: 1rem;
 
         margin: $description-margin-lg;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
 
         padding: $description-padding-lg;
 
@@ -44,14 +42,16 @@
     }
 
     @media only screen and (max-width: 1280px) {
-        margin: $container-margin-md;
+        margin: 0;
+        
         .projects-wrapper{
             margin: $description-margin-md;
             padding: $description-padding-md;
         }
     }
     @media only screen and (max-width: 768px) {
-        margin: $container-margin-sm;
+        margin: 0;
+
         .projects-wrapper{
             margin: $description-margin-sm;
             padding: $description-padding-sm;
