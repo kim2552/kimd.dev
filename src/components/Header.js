@@ -1,4 +1,4 @@
-import logo from '../assets/logo_2.png'
+import logo from '../assets/logo.png'
 import Navbar from './Navbar'
 
 const Header = () => {
