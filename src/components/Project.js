@@ -11,7 +11,7 @@ const Project = (props) => {
     }
     return (
         <>
-            <div style={{display: "flex"}}>
+            <div className="project-layout">
                 <div>
                     <h1>{p.title}</h1>
                     <p>{p.text}</p>

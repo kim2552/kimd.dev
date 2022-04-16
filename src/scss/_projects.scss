@@ -14,6 +14,10 @@
         }
     }
 
+    .project-layout{
+        display: flex
+    }
+
     .projects-wrapper{
         background-color: $box-color;
         color: $text-dark-color;
@@ -59,6 +63,10 @@
         .projects-wrapper{
             margin: $description-margin-sm;
             padding: $description-padding-sm;
+        }
+
+        .project-layout{
+            display: grid
         }
     }
 
