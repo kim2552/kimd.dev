@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "OnlyData",
-            "text": "A data visualization website that delivers minimalistic visuals to people. It helps users receive quick and easy to understand information in the form of graphs and charts. OnlyData updates people on relevant and important facts, trends and numbers.",
+            "text": "OnlyData is a data visualization website that displays Canadian statistics. It updates the data using Github-actions on a regular basis. Written in React JS.",
             "website_link": "https://onlydata.ca",
             "github_link": "https://github.com/kim2552/onlydata"
         },
