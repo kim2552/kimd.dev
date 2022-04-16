@@ -5,32 +5,30 @@
             "title": "OnlyData",
             "text": "OnlyData is a data visualization website that displays Canadian statistics. It updates the data using Github-actions on a regular basis. Written in React JS.",
             "website_link": "https://onlydata.ca",
-            "github_link": "https://github.com/kim2552/onlydata"
+            "github_link": "https://github.com/kim2552/onlydata",
+            "image_link": "images/onlydata_screenshot.png"
         },
         {
             "id": 2,
             "title": "Storyline",
             "text": "A web app that displays articles corresponding to the year and topic entered by the user. You can travel back in time by browsing articles from the past generated from a list using Google News RSS feed.",
             "website_link": "https://storyline.kimd.dev",
-            "github_link": "https://github.com/kim2552/storyline"
+            "github_link": "https://github.com/kim2552/storyline",
+            "image_link": "images/storyline_screenshot.png"
         },
         {
             "id": 3,
-            "title": "Memories App",
-            "text": "A CRUD web application that allows the user to store/display images and descriptions of events they want to remember. It is created using Laravel, MySQL, HTML, CSS and Javascript.",
-            "github_link": "https://github.com/kim2552/memories-app"
+            "title": "Drive Simulation",
+            "text": "2D driving simulator that captures the physics of a vehicle being driven. Includes obstacles and terrain that interacts with the vehicle. Written in Python using the PyGame library.",
+            "github_link": "https://github.com/kim2552/drive-simulation",
+            "image_link": "images/drivesim_screenshot.gif"
         },
         {
             "id": 4,
-            "title": "New Player",
-            "text": "NewPlayer is a video manipulation program that can swap the face of a person in a video with the face of a different person in an image selected by the user. The project is written in C++ using wxWidgets for the GUI. It uses OpenCV and dlib for image processing. This project was created as an exercise to learn about wxWidgets, OpenCV and the dlib library.",
-            "github_link": "https://github.com/kim2552/new-player"
-        },
-        {
-            "id": 5,
-            "title": "Drive Simulation",
-            "text": "2D driving simulator that captures the physics of a vehicle being driven. Includes obstacles and terrain that interacts with the vehicle. Written in Python using the PyGame library.",
-            "github_link": "https://github.com/kim2552/drive-simulation"
+            "title": "NewPlayer",
+            "text": "A video manipulation program that can swap the face of a person in a video with the face of a different person in an image selected by the user. Written in C++ using wxWidgets for the GUI. It uses OpenCV and dlib for image processing.",
+            "github_link": "https://github.com/kim2552/new-player",
+            "image_link": "images/newplayer_screenshot.gif"
         }
     ]
 }

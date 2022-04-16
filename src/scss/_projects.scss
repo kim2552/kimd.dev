@@ -21,8 +21,12 @@
         border-radius: 1rem;
 
         margin: $description-margin-lg;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
 
         padding: $description-padding-lg;
+        padding-top: 0;
+        padding-bottom: 0;
 
         font-size: 1.5rem;
 
@@ -55,6 +59,15 @@
         .projects-wrapper{
             margin: $description-margin-sm;
             padding: $description-padding-sm;
+        }
+    }
+
+    .image-wrapper{
+        margin: 1rem;
+
+        img{
+            height: $image-size-lg;
+            border-radius: 1rem;
         }
     }
 }
