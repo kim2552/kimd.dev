@@ -28,7 +28,7 @@ const Project = (props) => {
                 </div>
                 <a href={default_link} rel="noreferrer">
                     <div className="image-wrapper">
-                        <img src={p.image_link} alt="screenshot"></img>
+                        <img src={p.image_link} className="photo" alt="screenshot"></img>
                     </div>
                 </a>
             </div>
