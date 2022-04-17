@@ -10,11 +10,10 @@
         },
         {
             "id": 2,
-            "title": "Storyline",
-            "text": "A web app that displays articles corresponding to the year and topic entered by the user. You can travel back in time by browsing articles from the past generated from a list using Google News RSS feed.",
-            "website_link": "https://storyline.kimd.dev",
-            "github_link": "https://github.com/kim2552/storyline",
-            "image_link": "images/storyline_screenshot.png"
+            "title": "Hair Filter Application",
+            "text": "An Android application that applies 3D hair filters on a person's head. We can add hair filters to people by rendering 3D hair models in the image and placing it on the person's head. Developed in Android Studio. Written in Java and C++. Uses OpenGL, OpenCV and Dlib libraries.",
+            "github_link": "https://github.com/kim2552/hair-filter-app",
+            "image_link": "images/hairfilter_screenshot.gif"
         },
         {
             "id": 3,
@@ -25,6 +24,14 @@
         },
         {
             "id": 4,
+            "title": "Storyline",
+            "text": "A web app that displays articles corresponding to the year and topic entered by the user. You can travel back in time by browsing articles from the past generated from a list using Google News RSS feed.",
+            "website_link": "https://storyline.kimd.dev",
+            "github_link": "https://github.com/kim2552/storyline",
+            "image_link": "images/storyline_screenshot.png"
+        },
+        {
+            "id": 5,
             "title": "NewPlayer",
             "text": "A video manipulation program that can swap the face of a person in a video with the face of a different person in an image selected by the user. Written in C++ using wxWidgets for the GUI. It uses OpenCV and dlib for image processing.",
             "github_link": "https://github.com/kim2552/new-player",
